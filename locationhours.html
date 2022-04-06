@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<meta name="author" content="Spencer Long">
+	<meta name="keywords" content="Web Development Project">
+	<meta name="description" content="Pamela's Diner New Website">
+
+    <title>Pamela's Diner</title>
+
+    <link rel="shortcut icon" type="image/jpg" href="images/pamelaslogo.jpg">
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css"/>   
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.lightbox.min.js"></script>
+
+    <script>
+        $(function() {
+                $( "#tabs" ).tabs({
+                event: "mouseover"
+                });
+        });
+    </script>
+    <script>
+        $(function() {
+            $( "#accordion" ).accordion({
+                active: false,
+                collapsible: true,
+                /*https://stackoverflow.com/questions/7947789/jquery-ui-accordion-start-collapsed*/
+            });
+        });
+    </script>
+    <script type="text/JavaSCript">
+        $(function() {
+            $('#gallery a').lightBox();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="top_row">
+            <header>
+                <h1>Pamela's Diner</h1>
+                <a href="index.html"><img src="images/pamelaslogo.jpg" alt="Pamela's logo" class="responsive"/></a>
+            </header>
+
+            <nav>
+                <a href="index.html">Home</a>
+                |
+                <a href="menu.html">Menu</a>
+                |
+                <a class="selected" href="locationhours.html">Locations</a>
+                |
+                <a href="review.html">Reviews</a>
+                |
+                <a href="contact.html">Contact</a>
+            </nav>
+            <hr>
+        </div>
+
+        <div id="content">
+            <h2>Locations</h2>
+            <h3>Hover each location to see where it is and the hours of operation!</h3>
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Strip District</a></li>
+                    <li><a href="#tabs-2">Forbes Avenue</a></li>
+                    <li><a href="#tabs-3">Walnut Street</a></li>
+                    <li><a href="#tabs-4">Mt. Lebanon</a></li>
+                    <li><a href="#tabs-5">Squirrel Hill</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.052657763935!2d-79.98584578461428!3d40.45197147936101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f3dd213c09a7%3A0xd7eccb86f1cd2b60!2s60%2021st%20St%2C%20Pittsburgh%2C%20PA%2015222!5e0!3m2!1sen!2sus!4v1648891704708!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <table>
+                        <tr>
+                            <th>Day</th> 
+                            <th>Times</th> 
+                        </tr>
+                        <tr>
+                            <td>Mondays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesdays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesdays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Thursdays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Fridays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturdays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sundays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Holidays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="tabs-2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.5361957335435!2d-79.9597760846146!3d40.44126787936241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f229ef935b93%3A0x236b3ddc02b89e6f!2s3703%20Forbes%20Ave%2C%20Pittsburgh%2C%20PA%2015213!5e0!3m2!1sen!2sus!4v1648891489389!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <table>
+                        <tr>
+                            <th>Day</th> 
+                            <th>Times</th> 
+                        </tr>
+                        <tr>
+                            <td>Mondays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesdays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesdays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Thursdays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Fridays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturdays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sundays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Holidays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="tabs-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24288.552638228433!2d-79.932822!3d40.451608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x21ad7841ff8f2025!2sPamela&#39;s%20%7C%20P%26G%20Diner!5e0!3m2!1sen!2sus!4v1648892030009!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    <table>
+                        <tr>
+                            <th>Day</th> 
+                            <th>Times</th> 
+                        </tr>
+                        <tr>
+                            <td>Mondays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesdays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesdays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Thursdays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Fridays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturdays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sundays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Holidays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="tabs-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6078.06123703094!2d-80.043789!3d40.386014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f772eb5bedf9%3A0xb890d5008369a327!2s427%20Washington%20Rd%2C%20Mt%20Lebanon%2C%20PA%2015228!5e0!3m2!1sen!2sus!4v1648891838205!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    <table>
+                        <tr>
+                            <th>Day</th> 
+                            <th>Times</th> 
+                        </tr>
+                        <tr>
+                            <td>Mondays</td>
+                            <td>Closed</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesdays</td>
+                            <td>Closed</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesdays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Thursdays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Fridays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturdays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sundays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Holidays</td>
+                            <td>08:00AM - 02:00PM</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="tabs-5">
+                    <p>Location is permanently closed.</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <hr>
+            <a href="index.html"><img src="images/pamelaslogo.jpg" alt="Pamela's logo" class="responsive"/></a>
+            <nav>
+                <a href="index.html">Home</a> 
+                &nbsp;
+                <a href="menu.html">Menu</a>
+                &nbsp;
+                <a href="locationhours.html">Locations</a>
+                &nbsp;
+                <a href="review.html">Reviews</a>
+                &nbsp;
+                <a href="contact.html">Contact</a><br>
+                3703 Forbes Ave, Pittsburgh, PA 15213<br>
+                412-422-9457
+                <br>
+                <a href="mailto:syl2@andrew.cmu.edu" target="_blank"><img src="images/email.png" alt="Email Icon"></a>
+                <a href="https://www.facebook.com/pamelasdiner/" target="_blank"><img src="images/facebook.png" alt="Facebook Icon"></a>
+                <a href="https://www.yelp.com/biz/p-and-gs-pamelas-diner-pittsburgh-3" target="_blank"><img src="images/yelp.png" alt="Yelp Icon"></a> 
+                <a href="https://www.instagram.com/pamelasdiner/?hl=en" target="_blank"><img src="images/instagram.png" alt="Instagram Icon"></a> 
+            </nav>
+            &copy;Pamela's Diner<br/>
+        </footer>
+    </div>
+</body>
+</html>

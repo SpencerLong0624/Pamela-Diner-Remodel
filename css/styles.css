@@ -1,0 +1,250 @@
+body {
+	font-size: 100%; 
+	line-height: 1.7em; 
+    color: #464242; 
+    background-color:#ffffe0;
+}
+
+hr {
+    height: 3px;
+    color: #464242;
+    background-color: #464242;
+    border: none;
+}
+
+a {
+    color:#0bf0d9;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#ed0de1;
+    text-decoration:underline;
+}
+
+#top_row nav a.selected {
+	background: #aeaeae;
+	color: #ed0de1;	
+}
+
+#top_row img {
+    float:left;
+    padding-right: 1em;
+}
+
+#top_row h1 {
+    color:#ed0de1;
+    font-family: "PT Sans";
+    font-size: 3.2em;
+    letter-spacing: -2px;
+    text-align: center;
+    display: inline-block;
+    font-weight:bold;
+}
+
+#top_row nav {
+    font-family: "PT Sans";
+    text-align: right;
+    word-spacing:0.5em;
+}
+
+#bio {
+    font-size: 1em;
+}
+
+#container {
+    width: 80%;
+    margin: 10px auto;
+}
+
+iframe {
+    display:block;
+    margin:auto;
+    width: 100%;
+}
+
+#content-gallery a {
+    float: left;
+    padding: 5px;
+}
+
+footer {
+    font-family: "Times New Roman";
+	clear: both;
+	margin: 0;
+    padding: .5em;
+	font-variant: small-caps; 
+	font-size: 1em;
+	text-align: center;
+}
+
+#content h3 {
+    clear: both
+}
+
+#content h2 {
+    color: #0bf0d9;
+}
+
+#content {
+    font-family: "PT Sans";
+}
+
+#recent_info {
+    clear: both
+}
+
+#contact_info table {
+    width:100%;
+    border-style:solid; 
+    border-width:4px; 
+    border-color:#ed0de1;
+    border-spacing:4px;
+    margin:auto;
+    table-layout:auto;
+    border-collapse:collapse;
+    font-family: "PT Sans";
+}
+#contact_info th{
+    height:40px;
+    font-weight:bold; 
+    font-family: "PT Sans";
+}
+#contact_info th, td {
+    padding: 2px;
+    text-align:center;
+    border-style:solid; 
+    border-width:1px; 
+    color:#333333;
+    font-family: "PT Sans";
+}
+
+#mailing_list form {
+    width:100%;
+    border-style:solid; 
+    border-width:4px; 
+    border-color:#ed0de1;
+    border-spacing:4px;
+    margin:auto;
+    table-layout:auto;
+    border-collapse:collapse;
+    padding:10px;
+    font-family: "PT Sans";
+}
+
+#mailing_list legend {
+    font-weight:bold;
+    text-align:center;
+    color:#464242 ;
+    margin-bottom:5px;
+    font-family: "PT Sans";
+}
+#mailing_list label {
+    font-weight:bold;
+    text-align:center;
+    font-family: "PT Sans";
+}
+
+#menu_table table {
+    width:100%;
+    border-style:solid; 
+    border-width:4px; 
+    border-color:#ed0de1;
+    border-spacing:4px;
+    margin:auto;
+    table-layout:auto;
+    border-collapse:collapse;
+    font-family: "PT Sans";
+}
+#menu_table th{
+    height:40px;
+    font-weight:bold; 
+    font-family: "PT Sans";
+}
+#menu_table th, td {
+    padding: 2px;
+    text-align:center;
+    border-style:solid; 
+    border-width:1px; 
+    color:#333333;
+    font-family: "PT Sans";
+}
+
+#menu_table button {
+    background-color: #0bf0d9;
+    border: none;
+    color: #f8f1ed;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "PT Sans";
+}
+
+#menu_table button:hover {
+    background-color:#ed0de1;
+    text-decoration: underline;
+}
+
+#tabs table {
+    width:100%;
+    border-style:solid; 
+    border-width:4px; 
+    border-color:#ed0de1;
+    border-spacing:4px;
+    margin:auto;
+    table-layout:auto;
+    border-collapse:collapse;
+    font-family: "PT Sans";
+}
+#tabs th{
+    height:40px;
+    font-weight:bold; 
+    font-family: "PT Sans";
+}
+#tabs th, td {
+    padding: 2px;
+    text-align:center;
+    border-style:solid; 
+    border-width:1px; 
+    color:#000000;
+    font-family: "PT Sans";
+}
+
+#tabs-5 {
+    text-align: center;
+}
+
+#accordion button {
+    background-color: #0bf0d9;
+    border: none;
+    color: #f8f1ed;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "PT Sans";
+}
+
+#accordion button:hover {
+    background-color:#ed0de1;
+    text-decoration: underline;
+}
+
+#order h2 {
+    text-align: center;
+    background: #e46fde;
+}
+
+#order h2:hover {
+    text-align: center;
+    background: #e208d8;
+}
+
+
+#order a {
+    color: #f8f1ed;
+    text-decoration: none;
+}

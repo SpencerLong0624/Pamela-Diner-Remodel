@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<meta name="author" content="Spencer Long">
+	<meta name="keywords" content="Web Development Project">
+	<meta name="description" content="Pamela's Diner New Website">
+
+    <title>Pamela's Diner</title>
+
+    <link rel="shortcut icon" type="image/jpg" href="images/pamelaslogo.jpg">
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css"/>   
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.lightbox.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="top_row">
+            <header>
+                <h1>Pamela's Diner</h1>
+                <a href="index.html"><img src="images/pamelaslogo.jpg" alt="Pamela's logo" class="responsive"/></a>
+            </header>
+
+            <nav>
+                <a href="index.html">Home</a>
+                |
+                <a href="menu.html">Menu</a>
+                |
+                <a href="locationhours.html">Locations</a>
+                |
+                <a href="review.html">Reviews</a>
+                |
+                <a class="selected" href="contact.html">Contact</a>
+            </nav>
+            <hr>
+        </div>
+
+        <div id="content">
+            <h2>Contact Information</h2>
+            <div id="contact_info">
+                <table>
+                    <tr>
+                        <th>Contact Type</th> 
+                        <th>Information</th> 
+                    </tr>
+                    <tr>
+                        <td>Phone Number</td>
+                        <td><a href="tel:412-422-9457">412-422-9457</a></td> 
+                    </tr>
+                    <tr>
+                        <td>Email Address</td>
+                        <td><a href="mailto:pam@pamelasdiner.com">pam@pamelasdiner.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Mailing Address</td>
+                        <td><a href="https://goo.gl/maps/8ykM2whNXG25iDFx5" target="_blank">3703 Forbes Ave, Pittsburgh, PA 15213</a></td>
+                    </tr>
+                    <tr>
+                        <td>Website</td>
+                        <td><a href="https://www.pamelasdiner.com/" target="_blank">pamelasdiner.org</a></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="mailing_list">
+                <br/>
+                <h2>Mailing List</h2>
+                <h3>Join our mailing list!</h3>
+                <form action="mailto:pam@pamelasdiner.com" onsubmit="return validate()">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="name"> Name:</label><br/>
+                        <input type="text" id="name" name="name" value="" placeholder="Your Name" size="20" maxlength="20" required>
+                        <br/><br/>
+                        <label for="zip">Your zip code:</label><br/>
+                        <input type="text" id="zip" name="zip" value="" placeholder="12345" size="20" maxlength="5">
+                        <br/><br/>
+                    </fieldset>            
+                    <fieldset>
+                        <legend>Mailing List Information</legend>
+                        <label for="email">Email address:</label><br/>
+                        <input type="email" id="email" name="email" value="" placeholder="abc@email.com" required >
+                        <br/><br/>
+                        <label for="receive"> Please indicate if you want to join our mailing list:</label><br/>
+                        <input type="checkbox" id="receive" name="receive" value="yes"> Yes, please add me!
+                    </fieldset>
+                    <fieldset>
+                    <input type ="image" src="images/submit.png" alt="Submit" name="btnimage">
+                    </fieldset>
+                </form>
+            </div>
+    
+        </div>
+        <footer>
+            <hr>
+            <a href="index.html"><img src="images/pamelaslogo.jpg" alt="Pamela's logo" class="responsive"/></a>
+            <nav>
+                <a href="index.html">Home</a> 
+                &nbsp;
+                <a href="menu.html">Menu</a>
+                &nbsp;
+                <a href="locationhours.html">Locations</a>
+                &nbsp;
+                <a href="review.html">Reviews</a>
+                &nbsp;
+                <a href="contact.html">Contact</a><br>
+                3703 Forbes Ave, Pittsburgh, PA 15213<br>
+                412-422-9457
+                <br>
+                <a href="mailto:syl2@andrew.cmu.edu" target="_blank"><img src="images/email.png" alt="Email Icon"></a>
+                <a href="https://www.facebook.com/pamelasdiner/" target="_blank"><img src="images/facebook.png" alt="Facebook Icon"></a>
+                <a href="https://www.yelp.com/biz/p-and-gs-pamelas-diner-pittsburgh-3" target="_blank"><img src="images/yelp.png" alt="Yelp Icon"></a> 
+                <a href="https://www.instagram.com/pamelasdiner/?hl=en" target="_blank"><img src="images/instagram.png" alt="Instagram Icon"></a> 
+            </nav>
+            &copy;Pamela's Diner<br/>
+        </footer>
+    </div>
+</body>
+</html>

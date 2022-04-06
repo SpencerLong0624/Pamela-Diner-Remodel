@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<meta name="author" content="Spencer Long">
+	<meta name="keywords" content="Web Development Project">
+	<meta name="description" content="Pamela's Diner New Website">
+
+    <title>Pamela's Diner</title>
+
+    <link rel="shortcut icon" type="image/jpg" href="images/pamelaslogo.jpg">
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css"/>   
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.lightbox.min.js"></script>
+
+    <script type="text/JavaSCript">
+        $(function() {
+            $('#gallery a').lightBox();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="top_row">
+            <header>
+                <h1>Pamela's Diner</h1>
+                <a href="index.html"><img src="images/pamelaslogo.jpg" alt="Pamela's logo" class="responsive"/></a>
+            </header>
+
+            <nav>
+                <a class="selected" href="index.html">Home</a>
+                |
+                <a href="menu.html">Menu</a>
+                |
+                <a href="locationhours.html">Locations</a>
+                |
+                <a href="review.html">Reviews</a>
+                |
+                <a href="contact.html">Contact</a>
+            </nav>
+            <hr>
+        </div>
+
+        <div id="content">
+            <h2>Home</h2>
+            <iframe width="500" height="350" src="https://www.youtube.com/embed/Rb0Dw2t-nTE" title="YouTube video player about Pamela's Diner" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <div id="bio">
+                Pamela's Diner is a prominent chain of diners in Pittsburgh, Pennsylvania, USA. Its specialties are crêpe-style pancakes, omelets and Lyonnaise potatoes. It is "treasured" and is considered to be in the "pantheon of pancake purveyors". In 2013, Pamela's Diner was featured by the Wall Street Journal in a "What to Do in Pittsburgh" feature story. Pamela's Diner is owned by Gail Klingensmith and Pam Cohen.[1] Both educated as teachers, the business partners handle different tasks, Klingensmith with the more business end and Cohen as "the culinary artist". The first Pamela's Diner location, in the Squirrel Hill neighborhood, opened in 1979. Subsequent locations have opened in Shadyside, the Strip District, Millvale, Oakland and Mt. Lebanon. 
+                <br/>
+            </div>
+
+            <h3>Click on an image and click the sides to scroll through to see what we offer!</h3>
+            <div id="content-gallery">
+                <div id="gallery">
+                    <div id="galleryThumbnail1"><div id="thmbnlShadow1">
+                    <a href="images/crepes.png" title="We offer crepe-style pancakes!">
+                    <img src="images/crepesthumb.png" alt="image 1"/></a></div></div>
+
+                    <div id="galleryThumbnail2"><div id="thmbnlShadow2">
+                    <a href="images/hash.png" title="Come out for some nice hash browns and eggs!">
+                    <img src="images/hashthumb.png" alt="image 2"/></a></div></div>
+
+                    <div id="galleryThumbnail3"><div id="thmbnlShadow3">
+                    <a href="images/burger.png" title="We offer other food besides breakfast items!">
+                    <img src="images/burgerthumb.png" alt="image 3"/></a></div></div>
+
+                    <div id="galleryThumbnail4"><div id="thmbnlShadow4">
+                    <a href="images/pig.png" title="Come Pig Out!">
+                    <img src="images/pigthumb.png" alt="image 4"/></a></div></div>
+                </div>
+                <br/>
+            </div>
+        </div>
+        <footer>
+            <hr>
+            <a href="index.html"><img src="images/pamelaslogo.jpg" alt="Pamela's logo" class="responsive"/></a>
+            <nav>
+                <a href="index.html">Home</a> 
+                &nbsp;
+                <a href="menu.html">Menu</a>
+                &nbsp;
+                <a href="locationhours.html">Locations</a>
+                &nbsp;
+                <a href="review.html">Reviews</a>
+                &nbsp;
+                <a href="contact.html">Contact Us</a><br>
+                3703 Forbes Ave, Pittsburgh, PA 15213<br>
+                412-422-9457
+                <br>
+                <a href="mailto:syl2@andrew.cmu.edu" target="_blank"><img src="images/email.png" alt="Email Icon"></a>
+                <a href="https://www.facebook.com/pamelasdiner/" target="_blank"><img src="images/facebook.png" alt="Facebook Icon"></a>
+                <a href="https://www.yelp.com/biz/p-and-gs-pamelas-diner-pittsburgh-3" target="_blank"><img src="images/yelp.png" alt="Yelp Icon"></a> 
+                <a href="https://www.instagram.com/pamelasdiner/?hl=en" target="_blank"><img src="images/instagram.png" alt="Instagram Icon"></a> 
+            </nav>
+            &copy;Pamela's Diner<br/>
+        </footer>
+    </div>
+</body>
+</html>

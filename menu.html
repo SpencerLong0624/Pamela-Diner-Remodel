@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<meta name="author" content="Spencer Long">
+	<meta name="keywords" content="Web Development Project">
+	<meta name="description" content="Pamela's Diner New Website">
+
+    <title>Pamela's Diner</title>
+
+    <link rel="shortcut icon" type="image/jpg" href="images/pamelaslogo.jpg">
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css"/>   
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.lightbox.min.js"></script>
+
+    <script>
+		$(function() {
+		  	$( "#tabs" ).tabs({
+		    	event: "mouseover"
+		  	});
+		});
+    </script>
+    <script type="text/JavaSCript">
+        $(function() {
+            $('#gallery a').lightBox();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="top_row">
+            <header>
+                <h1>Pamela's Diner</h1>
+                <a href="index.html"><img src="images/pamelaslogo.jpg" alt="Pamela's logo" class="responsive"/></a>
+            </header>
+
+            <nav>
+                <a href="index.html">Home</a>
+                |
+                <a class="selected" href="menu.html">Menu</a>
+                |
+                <a href="locationhours.html">Locations</a>
+                |
+                <a href="review.html">Reviews</a>
+                |
+                <a href="contact.html">Contact</a>
+            </nav>
+            <hr>
+        </div>
+
+        <div id="order">
+            <h2><a href="https://www.pamelasdiner.com/order-online" target="_blank">Order Online</a></h2>
+        </div>
+
+        <div id="content">
+            <h2>Menu</h2>
+            <h3>Click on an image and click the sides to scroll through some images of the food we have!</h3>
+            <div id="content-gallery">
+                <div id="gallery">
+                    <div id="menugalleryThumbnail1"><div id="menuthmbnlShadow1">
+                    <a href="images/tab1.png" title="The food at our Mt. Lebanon Location!">
+                    <img src="images/tab1thumb.png" alt="Mt. Lebanon Food"/></a></div></div>
+
+                    <div id="menugalleryThumbnail2"><div id="menuthmbnlShadow2">
+                    <a href="images/tab2.png" title="The food at our Shadyside Location!">
+                    <img src="images/tab2thumb.png" alt="Shadyside Food"/></a></div></div>
+   
+
+                    <div id="menugalleryThumbnail3"><div id="menuthmbnlShadow3">
+                    <a href="images/tab3.png" title="The food at our Squirrel Hill Location!">
+                    <img src="images/tab3thumb.png" alt="Squirrel Hill Food"/></a></div></div>
+
+                    <div id="menugalleryThumbnail4"><div id="menuthmbnlShadow4">
+                    <a href="images/tab4.png" title="The food at our Strip District Location!">
+                    <img src="images/tab4thumb.png" alt="Strip District Food"/></a></div></div>
+                </div>
+                <br/>
+            </div>
+            <br><br><br>
+            <h3>Click on a location to get the full menu of that specific location.</h3>
+            <div id="menu_table">
+                <table>
+                    <tr>
+                        <th>Location</th> 
+                        <th>Menu</th> 
+                    </tr>
+                    <tr>
+                        <td>Mt. Lebanon</td>
+                        <td><button onclick="window.open('menu/mt.pdf');">Mt. Lebanon Menu</button></td>
+                    </tr>
+                    <tr>
+                        <td>Shadyside</td>
+                        <td><button onclick="window.open('menu/shadyside.pdf');">Shadyside Menu</button></td>
+                    </tr>
+                    <tr>
+                        <td>Squirrel Hill</td>
+                        <td><button onclick="window.open('menu/sqhill.pdf');">Squirrel Hill Menu</button></td>
+                    </tr>
+                    <tr>
+                        <td>Strip District</td>
+                        <td><button onclick="window.open('menu/strip.pdf');">Strip District Menu</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <hr>
+            <a href="index.html"><img src="images/pamelaslogo.jpg" alt="Pamela's logo" class="responsive"/></a>
+            <nav>
+                <a href="index.html">Home</a> 
+                &nbsp;
+                <a href="menu.html">Menu</a>
+                &nbsp;
+                <a href="locationhours.html">Locations</a>
+                &nbsp;
+                <a href="review.html">Reviews</a>
+                &nbsp;
+                <a href="contact.html">Contact</a><br>
+                3703 Forbes Ave, Pittsburgh, PA 15213<br>
+                412-422-9457
+                <br>
+                <a href="mailto:syl2@andrew.cmu.edu" target="_blank"><img src="images/email.png" alt="Email Icon"></a>
+                <a href="https://www.facebook.com/pamelasdiner/" target="_blank"><img src="images/facebook.png" alt="Facebook Icon"></a>
+                <a href="https://www.yelp.com/biz/p-and-gs-pamelas-diner-pittsburgh-3" target="_blank"><img src="images/yelp.png" alt="Yelp Icon"></a> 
+                <a href="https://www.instagram.com/pamelasdiner/?hl=en" target="_blank"><img src="images/instagram.png" alt="Instagram Icon"></a> 
+            </nav>
+            &copy;Pamela's Diner<br/>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<meta name="author" content="Spencer Long">
+	<meta name="keywords" content="Web Development Project">
+	<meta name="description" content="Pamela's Diner New Website">
+
+    <title>Pamela's Diner</title>
+
+    <link rel="shortcut icon" type="image/jpg" href="images/pamelaslogo.jpg">
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css"/>   
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.lightbox.min.js"></script>
+
+    <script>
+        $(function() {
+                $( "#tabs" ).tabs({
+                event: "mouseover"
+                });
+        });
+    </script>
+    <script>
+        $(function() {
+            $( "#accordion" ).accordion({
+                active: false,
+                collapsible: true,
+                /*https://stackoverflow.com/questions/7947789/jquery-ui-accordion-start-collapsed*/
+            });
+        });
+    </script>
+    <script type="text/JavaSCript">
+        $(function() {
+            $('#gallery a').lightBox();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="top_row">
+            <header>
+                <h1>Pamela's Diner</h1>
+                <a href="index.html"><img src="images/pamelaslogo.jpg" alt="Pamela's logo" class="responsive"/></a>
+            </header>
+
+            <nav>
+                <a href="index.html">Home</a>
+                |
+                <a href="menu.html">Menu</a>
+                |
+                <a href="locationhours.html">Locations</a>
+                |
+                <a class="selected" href="review.html">Reviews</a>
+                |
+                <a href="contact.html">Contact</a>
+            </nav>
+            <hr>
+        </div>
+
+        <div id="content">
+            <h2>See what everyone's saying!</h2>
+            <h3>Click each accordion element to see reviews from different sources.</h3>
+            <div id = "accordion">
+                <h4>Yelp</h4>
+                <div>
+                    <img src="images/yelpreview.png" alt="yelp" class="responsive"/>
+                    <ul>
+                        <li><i>"A Pittsburgh staple. Love the French toast, home fries, and corned beef hash. Can't go wrong with Pamela's."</i></li><br>
+                        <li><i>"Simply the best breakfast place!! Pams has my heart. Whether it's the sweet hot cakes or hearty potatoes Pamela's knows how to COOK! I could eat here everyday :)"</i></li><br>
+                        <li><i>"Legendary hotcakes and great place for a breakfast or brunch styled food with any group. Lot's of simple stables that are also consistent across all their locations."</i></li><br>
+                        <li><i>"Absolutely fantastic.  Buttery pancakes to die for.  Super friendly service.  Genuinely nice people.  Great diner. 'Nuff said."</i></li><br>
+                        <li><i>"Uh huh you know what it is. BLACK AND YELLOW BLACK AND YELLOW. DUDE this is the restaurant that best represents pittsburgh, not primanti bros. This restaurant has been a staple of mine ever since freshmen year.  If it's your first time here, get the corn beef hash with over-easy eggs and rye bread.  DO NOT - I repeat, DO NOT forget to order the banana chocolate hotcakes."</i></li>
+                    </ul>
+                    <p>Click on the button for more Yelp reviews!</p>
+                    <td><button onclick="window.open('https://www.yelp.com/biz/p-and-gs-pamelas-diner-pittsburgh');">More Yelp Reviews</button></td>
+                </div>
+    
+                <h4>Google</h4>
+                <div>
+                    <img src="images/googlereview.png" alt="google" class="responsive"/>
+                    <ul>
+                        <li><i>"Nice service, big portions, lovely place, good prices, tasty food."</i></li><br>
+                        <li><i>"Very very good! Food was delicious, tried everything on the table. I will say the Chorizo hash we had was the best. Tried the Croissant French Toast, just tastes like good french toast with topping(nothing special). Everything tasted good the next day as well. They were slammed but still very quick service, they were rushing to get our order in but it was nice! Could work on being better with refills, never saw the waitress once we got our food and I didn't get offered a refill until after I finished eating(was water); they were extremely busy though so understandable. Overall, highly recommended."</i></li><br>
+                        <li><i>"Worth the wait in line if it's busy!!! Excellent breakfast. The hot cakes are a must have but the potatoes are INCREDIBLE. I could eat those all day every day. I ordered the 2 eggs with bacon and potatoes and then shared the hot cakes as they are big and filling."</i></li><br>
+                        <li><i>"Fine local place to have a breakfast. Good portion size for reasonable price."</i></li>
+                    </ul>
+                    <p>Click on the button for more Google reviews!</p>
+                    <td><button onclick="window.open('https://www.google.com/search?q=pamelas+diner+google+reviews&oq=pamelas+diner+google+reviews&aqs=chrome..69i57j33i299.7666j0j7&sourceid=chrome&ie=UTF-8#lrd=0x8834f3dcdf678413:0x2b6723dae7142a78,1,,,');">More Google Reviews</button></td>
+                </div>
+
+                <h4>Tripadvisor</h4>
+                <div>
+                    <img src="images/tripreview.png" alt="tripadvisor" class="responsive"/>
+                    <ul>
+                        <li><i>"One of the best breakfast I have had."</i></li><br>
+                        <li><i>"Understand the hype."</i></li><br>
+                        <li><i>"Awesome food, awesome people, awesome time."</i></li><br>
+                        <li><i>"Friendly atmosphere, inside/outside dining. Plenty of dishes to choose from Clean and safe. Great omelets and crepe style pancakes."</i></li><br>
+                        <li><i>"AWESOME Food very clean. There was a wait but not very long. They text you when your table is ready. Had their delicious creap hotcakes and the tex mex omelet. Would definitely eat there again."</i></li>
+                    </ul>
+                    <p>Click on the button for more Yelp reviews!</p>
+                    <td><button onclick="window.open('https://www.tripadvisor.com/Restaurant_Review-g53449-d3599818-Reviews-Pamela_s_Diner-Pittsburgh_Pennsylvania.html');">More Tripadvisor Reviews</button></td>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <hr>
+            <a href="index.html"><img src="images/pamelaslogo.jpg" alt="Pamela's logo" class="responsive"/></a>
+            <nav>
+                <a href="index.html">Home</a> 
+                &nbsp;
+                <a href="menu.html">Menu</a>
+                &nbsp;
+                <a href="locationhours.html">Locations</a>
+                &nbsp;
+                <a href="review.html">Reviews</a>
+                &nbsp;
+                <a href="contact.html">Contact</a><br>
+                3703 Forbes Ave, Pittsburgh, PA 15213<br>
+                412-422-9457
+                <br>
+                <a href="mailto:syl2@andrew.cmu.edu" target="_blank"><img src="images/email.png" alt="Email Icon"></a>
+                <a href="https://www.facebook.com/pamelasdiner/" target="_blank"><img src="images/facebook.png" alt="Facebook Icon"></a>
+                <a href="https://www.yelp.com/biz/p-and-gs-pamelas-diner-pittsburgh-3" target="_blank"><img src="images/yelp.png" alt="Yelp Icon"></a> 
+                <a href="https://www.instagram.com/pamelasdiner/?hl=en" target="_blank"><img src="images/instagram.png" alt="Instagram Icon"></a> 
+            </nav>
+            &copy;Pamela's Diner<br/>
+        </footer>
+    </div>
+</body>
+</html>
